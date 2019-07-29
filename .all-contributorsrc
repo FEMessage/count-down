@@ -1,0 +1,26 @@
+{
+  "projectName": "count-down",
+  "projectOwner": "FEMessage",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "donaldshen",
+      "name": "Donald Shen",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19591950?v=4",
+      "profile": "https://donaldshen.github.io/portfolio",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
