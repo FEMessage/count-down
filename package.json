@@ -1,6 +1,6 @@
 {
   "name": "@femessage/count-down",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a user friendly vue count-down component",
   "author": "https://github.com/FEMessage",
   "license": "MIT",
@@ -8,8 +8,15 @@
     "type": "git",
     "url": "https://github.com/FEMessage/count-down.git"
   },
-  "keywords": ["vue", "sfc", "component"],
-  "files": ["src", "dist"],
+  "keywords": [
+    "vue",
+    "sfc",
+    "component"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ],
   "main": "dist/count-down.umd.js",
   "module": "dist/count-down.esm.js",
   "unpkg": "dist/count-down.min.js",
