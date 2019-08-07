@@ -8,16 +8,8 @@
     "type": "git",
     "url": "https://github.com/FEMessage/count-down.git"
   },
-  "keywords": [
-    "vue",
-    "sfc",
-    "component"
-  ],
-  "files": [
-    "src",
-    "dist",
-    "yarn.lock"
-  ],
+  "keywords": ["vue", "sfc", "component"],
+  "files": ["src", "dist"],
   "main": "dist/count-down.umd.js",
   "module": "dist/count-down.esm.js",
   "unpkg": "dist/count-down.min.js",
@@ -67,7 +59,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "vue-sfc-cli": "1.10.3",
+  "vue-sfc-cli": "1.10.6",
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"

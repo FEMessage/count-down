@@ -1,9 +1,9 @@
 # count-down
 
-[![Build Status](https://travis-ci.com/FEMessage/count-down.svg?branch=master)](https://travis-ci.com/FEMessage/count-down)
-[![NPM Download](https://img.shields.io/npm/dm/@femessage/count-down.svg)](https://www.npmjs.com/package/@femessage/count-down)
-[![NPM Version](https://img.shields.io/npm/v/@femessage/count-down.svg)](https://www.npmjs.com/package/@femessage/count-down)
-[![NPM License](https://img.shields.io/npm/l/@femessage/count-down.svg)](https://github.com/FEMessage/count-down/blob/master/LICENSE)
+[![Build Status](https://badgen.net/travis/FEMessage/count-down/master)](https://travis-ci.com/FEMessage/count-down)
+[![NPM Download](https://badgen.net/npm/dm/@femessage/count-down)](https://www.npmjs.com/package/@femessage/count-down)
+[![NPM Version](https://badgen.net/npm/v/@femessage/count-down)](https://www.npmjs.com/package/@femessage/count-down)
+[![NPM License](https://badgen.net/npm/license/@femessage/count-down)](https://github.com/FEMessage/count-down/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/FEMessage/count-down/pulls)
 [![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github-tools.github.io/github-release-notes/)
 
@@ -22,6 +22,7 @@ A user friendly vue count-down component 😃
 * [Links](#links)
 * [Install](#install)
 * [Inspiration](#inspiration)
+* [Contributing](#contributing)
 * [Contributors](#contributors)
 * [License](#license)
 
@@ -61,6 +62,19 @@ The api & implementation designs are inspired by
 
 * [taro-ui](https://taro-ui.aotu.io/#/docs/countdown)
 * [vant](https://youzan.github.io/vant/#/zh-CN/count-down)
+
+[⬆ Back to Top](#table-of-contents)
+
+## Contributing
+
+For those who are interested in contributing to this project, such as:
+
+- report a bug
+- request new feature
+- fix a bug
+- implement a new feature
+
+Please refer to our [contributing guide](https://github.com/FEMessage/.github/blob/master/CONTRIBUTING.md).
 
 [⬆ Back to Top](#table-of-contents)
 

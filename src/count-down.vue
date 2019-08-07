@@ -46,13 +46,14 @@ export default {
       default: true
     },
     /**
-     * output format<br>
-     * 输出格式。<br>
-     * default: 'dd 天 hh 时 mm 分 ss 秒'. The actual remain days, hours, minutes & seconds will replace these optional dd, hh, mm & ss specifiers<br>
-     * 默认值：'dd 天 hh 时 mm 分 ss 秒'。剩余时间的日、时、分和秒数据，会替换字符串中的dd、hh、mm和ss标识符，且都是可选的<br>
-     * the default value will change according to whether there are days, hours, minutes & seconds
-     * 默认值会根据是否传入days, hours, minutes, seconds而变化<br>
+     * Output format.
+     * Default: 'dd 天 hh 时 mm 分 ss 秒'. These dd, hh, mm & ss specifiers are optional.
+     * The default value will change according to whether there are days, hours, minutes & seconds,
      * e.g., if user just pass minutes, then the default value will be 'mm 分 ss 秒'
+     *
+     * 输出格式。
+     * 默认值：'dd 天 hh 时 mm 分 ss 秒'。dd、hh、mm和ss标识符都是可选的。
+     * 默认值会根据是否传入days, hours, minutes, seconds而变化，
      * 比如用户只传了minutes，那么默认值就变为'mm 分 ss 秒'
      */
     format: {
