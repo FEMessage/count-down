@@ -1,6 +1,6 @@
 <template>
   <span>
-    <slot v-bind="countdownData">{{countdownFormated}}</slot>
+    <slot v-bind="countdownData">{{ countdownFormated }}</slot>
   </span>
 </template>
 
@@ -140,6 +140,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>

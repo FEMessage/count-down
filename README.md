@@ -15,16 +15,16 @@ A user friendly vue count-down component 😃
 
 ## Table of Contents
 
-* [Introduction](#introduction)
-  * [Use requestAnimationFrame](#use-requestanimationframe)
-  * [Millisecond](#millisecond)
-  * [Smart default format](#smart-default-format)
-* [Links](#links)
-* [Install](#install)
-* [Inspiration](#inspiration)
-* [Contributing](#contributing)
-* [Contributors](#contributors)
-* [License](#license)
+- [Introduction](#introduction)
+  - [Use requestAnimationFrame](#use-requestanimationframe)
+  - [Millisecond](#millisecond)
+  - [Smart default format](#smart-default-format)
+- [Links](#links)
+- [Install](#install)
+- [Inspiration](#inspiration)
+- [Contributing](#contributing)
+- [Contributors](#contributors)
+- [License](#license)
 
 ## Introduction
 
@@ -44,7 +44,7 @@ The default format will adjust by the props which are days, hours, minutes & sec
 
 ## Links
 
-* [docs](https://femessage.github.io/count-down/)
+- [docs](https://femessage.github.io/count-down/)
 
 [⬆ Back to Top](#table-of-contents)
 
@@ -60,8 +60,8 @@ yarn add @femessage/count-down
 
 The api & implementation designs are inspired by
 
-* [taro-ui](https://taro-ui.aotu.io/#/docs/countdown)
-* [vant](https://youzan.github.io/vant/#/zh-CN/count-down)
+- [taro-ui](https://taro-ui.aotu.io/#/docs/countdown)
+- [vant](https://youzan.github.io/vant/#/zh-CN/count-down)
 
 [⬆ Back to Top](#table-of-contents)
 
