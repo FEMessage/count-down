@@ -160,7 +160,7 @@ export default {
     },
     setSession() {
       if (this.keepInSession) {
-        window.sessionStorage.setItem(
+        sessionStorage.setItem(
           this.keepInSession,
           JSON.stringify({
             countdown: this.countdown,
@@ -171,7 +171,7 @@ export default {
       }
     },
     clearSession() {
-      window.sessionStorage.removeItem(this.keepInSession)
+      sessionStorage.removeItem(this.keepInSession)
     }
   }
 }
