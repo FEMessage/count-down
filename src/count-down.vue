@@ -104,8 +104,9 @@ export default {
   mounted() {
     if (this.autoplay) this.start()
     window.addEventListener('unload', this.setSession)
-    if (sessionStorage.getItem(this.keepInSession)) {
-      const session = JSON.parse(sessionStorage.getItem(this.keepInSession))
+    let session = sessionStorage.getItem(this.keepInSession)
+    if (session) {
+      session = JSON.parse(session)
       const mountTime = session.rafId
         ? Number(new Date()) - session.unloadTime
         : 0
