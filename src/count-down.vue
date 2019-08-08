@@ -59,6 +59,13 @@ export default {
     format: {
       type: String,
       default: ''
+    },
+
+    /**
+     * keep countdowm time in session
+     */
+    keepInSession: {
+      type: String
     }
   },
   data() {
@@ -96,6 +103,19 @@ export default {
   },
   mounted() {
     if (this.autoplay) this.start()
+    window.addEventListener('unload', this.setSession)
+    if (sessionStorage.getItem(this.keepInSession)) {
+      const session = JSON.parse(sessionStorage.getItem(this.keepInSession))
+      const mountTime = session.rafId
+        ? Number(new Date()) - session.unloadTime
+        : 0
+      this.elapsed = this.time - (session.countdown - mountTime)
+    }
+  },
+  beforeDestroy() {
+    cancelAnimationFrame(this.rafId)
+    this.setSession()
+    window.removeEventListener('unload', this.setSession)
   },
   methods: {
     /**
@@ -115,6 +135,7 @@ export default {
             /**
              * 计时结束事件
              */
+            this.clearSession()
             this.$emit('finish')
           }
         })
@@ -136,6 +157,21 @@ export default {
     reset() {
       this.pause()
       this.elapsed = 0
+    },
+    setSession() {
+      if (this.keepInSession) {
+        window.sessionStorage.setItem(
+          this.keepInSession,
+          JSON.stringify({
+            countdown: this.countdown,
+            unloadTime: Number(new Date()),
+            rafId: this.rafId
+          })
+        )
+      }
+    },
+    clearSession() {
+      window.sessionStorage.removeItem(this.keepInSession)
     }
   }
 }
