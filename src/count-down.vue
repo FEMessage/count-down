@@ -110,9 +110,7 @@ export default {
     let session = sessionStorage.getItem(this.keepAliveId)
     if (session) {
       session = JSON.parse(session)
-      const mountTime = session.rafId
-        ? Number(new Date()) - session.unloadTime
-        : 0
+      const mountTime = session.rafId ? Date.now() - session.unloadTime : 0
       this.elapsed = this.time - (session.countdown - mountTime)
     }
   },
@@ -168,7 +166,7 @@ export default {
           this.keepAliveId,
           JSON.stringify({
             countdown: this.countdown,
-            unloadTime: Number(new Date()),
+            unloadTime: Date.now(),
             rafId: this.rafId
           })
         )
