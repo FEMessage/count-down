@@ -106,7 +106,7 @@ export default {
   },
   mounted() {
     if (this.autoplay) this.start()
-    window.addEventListener('unload', this.setSession)
+    window.addEventListener('unload', this.storeCountDownState)
     let session = sessionStorage.getItem(this.keepAliveId)
     if (session) {
       session = JSON.parse(session)
@@ -118,8 +118,8 @@ export default {
   },
   beforeDestroy() {
     cancelAnimationFrame(this.rafId)
-    this.setSession()
-    window.removeEventListener('unload', this.setSession)
+    this.storeCountDownState()
+    window.removeEventListener('unload', this.storeCountDownState)
   },
   methods: {
     /**
@@ -139,7 +139,7 @@ export default {
             /**
              * 计时结束事件
              */
-            this.clearSession()
+            this.clearCountDownState()
             this.$emit('finish')
           }
         })
@@ -162,7 +162,7 @@ export default {
       this.pause()
       this.elapsed = 0
     },
-    setSession() {
+    storeCountDownState() {
       if (this.keepAliveId) {
         sessionStorage.setItem(
           this.keepAliveId,
@@ -174,7 +174,7 @@ export default {
         )
       }
     },
-    clearSession() {
+    clearCountDownState() {
       sessionStorage.removeItem(this.keepAliveId)
     }
   }
