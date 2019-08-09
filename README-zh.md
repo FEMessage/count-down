@@ -13,16 +13,16 @@
 
 ## Table of Contents
 
-* [Introduction](#introduction)
-  * [Use requestAnimationFrame](#use-requestanimationframe)
-  * [支持毫秒级计时](#支持毫秒级计时)
-  * [智能的默认 format](#智能的默认-format)
-* [Links](#links)
-* [Install](#install)
-* [Inspiration](#inspiration)
-* [Contributing](#contributing)
-* [Contributors](#contributors)
-* [License](#license)
+- [Introduction](#introduction)
+  - [Use requestAnimationFrame](#use-requestanimationframe)
+  - [支持毫秒级计时](#支持毫秒级计时)
+  - [智能的默认 format](#智能的默认-format)
+- [Links](#links)
+- [Install](#install)
+- [Inspiration](#inspiration)
+- [Contributing](#contributing)
+- [Contributors](#contributors)
+- [License](#license)
 
 ## Introduction
 
@@ -42,7 +42,7 @@ count-down 内部使用 requestAnimationFrame 计时，无论是浏览器进程�
 
 ## Links
 
-* [API文档](https://femessage.github.io/count-down/)
+- [API 文档](https://femessage.github.io/count-down/)
 
 [⬆ Back to Top](#table-of-contents)
 
@@ -58,8 +58,8 @@ yarn add @femessage/count-down
 
 api 设计和实现参考了
 
-* [taro-ui](https://taro-ui.aotu.io/#/docs/countdown)
-* [vant](https://youzan.github.io/vant/#/zh-CN/count-down)
+- [taro-ui](https://taro-ui.aotu.io/#/docs/countdown)
+- [vant](https://youzan.github.io/vant/#/zh-CN/count-down)
 
 [⬆ Back to Top](#table-of-contents)
 
