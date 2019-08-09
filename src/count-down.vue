@@ -64,7 +64,7 @@ export default {
     /**
      * keep countdowm time in session
      */
-    keepInSession: {
+    keepAlive: {
       type: String
     }
   },
@@ -99,12 +99,15 @@ export default {
     },
     countdownData() {
       return toTimeData(this.countdown)
+    },
+    keepAliveId() {
+      return this.keepAlive ? `count_down_${this.keepAlive}` : ''
     }
   },
   mounted() {
     if (this.autoplay) this.start()
     window.addEventListener('unload', this.setSession)
-    let session = sessionStorage.getItem(this.keepInSession)
+    let session = sessionStorage.getItem(this.keepAliveId)
     if (session) {
       session = JSON.parse(session)
       const mountTime = session.rafId
@@ -160,9 +163,9 @@ export default {
       this.elapsed = 0
     },
     setSession() {
-      if (this.keepInSession) {
+      if (this.keepAliveId) {
         sessionStorage.setItem(
-          this.keepInSession,
+          this.keepAliveId,
           JSON.stringify({
             countdown: this.countdown,
             unloadTime: Number(new Date()),
@@ -172,7 +175,7 @@ export default {
       }
     },
     clearSession() {
-      sessionStorage.removeItem(this.keepInSession)
+      sessionStorage.removeItem(this.keepAliveId)
     }
   }
 }
