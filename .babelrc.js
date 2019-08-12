@@ -5,7 +5,7 @@ module.exports = api => {
       [
         '@babel/transform-runtime',
         {
-          regenerator: true,
+          regenerator: true
         }
       ]
     ]
