@@ -1,21 +1,23 @@
 import {formatTime, toTimeData, toMilliseconds} from '../src/util'
 
 describe('formatTime', () => {
-  test('正确解析日时分秒', () => {
+  test('正确解析日时分秒毫秒', () => {
     const t = toMilliseconds({
       days: 2,
       hours: 3,
       minutes: 4,
-      seconds: 5
+      seconds: 5,
+      milliseconds: 1
     })
-    expect(formatTime(t, 'ddhhmmss')).toBe('02030405')
+    expect(formatTime(t, 'ddhhmmssms')).toBe('02030405001')
     const t2 = toMilliseconds({
       days: 2,
       hours: 33,
       minutes: 4,
-      seconds: -5
+      seconds: -5,
+      milliseconds: 1
     })
-    expect(formatTime(t2, 'ddhhmmss')).toBe('03090355')
+    expect(formatTime(t2, 'ddhhmmssms')).toBe('03090355001')
   })
   test('format仅传部分占位符的情况', () => {
     const t = toMilliseconds({
