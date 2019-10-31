@@ -6,7 +6,7 @@ const formatSpecifiers = {
   seconds: 'ss',
   milliseconds: 'ms'
 }
-const secondsIn = {
+const millisecondsIn = {
   days: 60 * 60 * 24 * 1000,
   hours: 60 * 60 * 1000,
   minutes: 60 * 1000,
@@ -75,8 +75,8 @@ export function formatTime(time, format) {
   // 注意顺序很重要。要先从大的时间单位开始构造字符串
   entries(formatSpecifiers).forEach(([k, specifier]) => {
     if (includes(result, specifier)) {
-      const v = Math.floor(time / secondsIn[k])
-      time -= v * secondsIn[k]
+      const v = Math.floor(time / millisecondsIn[k])
+      time -= v * millisecondsIn[k]
       result = result.replace(specifier, timeFormatter(k, v))
     }
   })
@@ -90,7 +90,7 @@ export function formatTime(time, format) {
  */
 export function toTimeData(time) {
   const timeData = {}
-  entries(secondsIn).forEach(([k, v]) => {
+  entries(millisecondsIn).forEach(([k, v]) => {
     timeData[k] = Math.floor(time / v)
     time -= timeData[k] * v
   })

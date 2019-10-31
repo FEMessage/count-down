@@ -39,6 +39,13 @@ export default {
       default: 0
     },
     /**
+     * remain milliseconds
+     */
+    milliseconds: {
+      type: Number,
+      default: 0
+    },
+    /**
      * whether autoplay or not
      */
     autoplay: {
