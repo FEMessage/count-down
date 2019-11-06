@@ -84,7 +84,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="https://donaldshen.github.io/portfolio"><img src="https://avatars3.githubusercontent.com/u/19591950?v=4" width="100px;" alt="Donald Shen"/><br /><sub><b>Donald Shen</b></sub></a><br /><a href="https://github.com/FEMessage/count-down/commits?author=donaldshen" title="Code">💻</a> <a href="https://github.com/FEMessage/count-down/commits?author=donaldshen" title="Documentation">📖</a> <a href="https://github.com/FEMessage/count-down/commits?author=donaldshen" title="Tests">⚠️</a></td></tr></table>
+<table>
+  <tr>
+    <td align="center"><a href="https://donaldshen.github.io/portfolio"><img src="https://avatars3.githubusercontent.com/u/19591950?v=4" width="100px;" alt="Donald Shen"/><br /><sub><b>Donald Shen</b></sub></a><br /><a href="https://github.com/FEMessage/count-down/commits?author=donaldshen" title="Code">💻</a> <a href="https://github.com/FEMessage/count-down/commits?author=donaldshen" title="Documentation">📖</a> <a href="https://github.com/FEMessage/count-down/commits?author=donaldshen" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://shoyuf.top"><img src="https://avatars3.githubusercontent.com/u/27998490?v=4" width="100px;" alt="Shoyuf"/><br /><sub><b>Shoyuf</b></sub></a><br /><a href="https://github.com/FEMessage/count-down/commits?author=shoyuf" title="Code">💻</a></td>
+  </tr>
+</table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
