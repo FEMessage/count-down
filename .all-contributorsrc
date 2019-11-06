@@ -20,6 +20,15 @@
         "doc",
         "test"
       ]
+    },
+    {
+      "login": "shoyuf",
+      "name": "Shoyuf",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/27998490?v=4",
+      "profile": "https://shoyuf.top",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
