@@ -9,20 +9,20 @@
 
 极易使用的倒计时组件 😃
 
-![示例](https://cdn.nlark.com/yuque/0/2019/gif/304775/1564112303450-9cbd89cf-c170-4ffe-a905-5890b9948858.gif)
+![示例](https://i.loli.net/2019/11/15/khawbTnFuvHOd7N.gif)
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-  - [Use requestAnimationFrame](#use-requestanimationframe)
-  - [支持毫秒级计时](#支持毫秒级计时)
-  - [智能的默认 format](#智能的默认-format)
-- [Links](#links)
-- [Install](#install)
-- [Inspiration](#inspiration)
-- [Contributing](#contributing)
-- [Contributors](#contributors)
-- [License](#license)
+* [Introduction](#introduction)
+  * [Use requestAnimationFrame](#use-requestanimationframe)
+  * [支持毫秒级计时](#支持毫秒级计时)
+  * [智能的默认 format](#智能的默认-format)
+* [Links](#links)
+* [Install](#install)
+* [Inspiration](#inspiration)
+* [Contributing](#contributing)
+* [Contributors](#contributors)
+* [License](#license)
 
 ## Introduction
 
@@ -42,7 +42,7 @@ count-down 内部使用 requestAnimationFrame 计时，无论是浏览器进程�
 
 ## Links
 
-- [API 文档](https://femessage.github.io/count-down/)
+* [API 文档](https://femessage.github.io/count-down/)
 
 [⬆ Back to Top](#table-of-contents)
 
@@ -58,8 +58,8 @@ yarn add @femessage/count-down
 
 api 设计和实现参考了
 
-- [taro-ui](https://taro-ui.aotu.io/#/docs/countdown)
-- [vant](https://youzan.github.io/vant/#/zh-CN/count-down)
+* [taro-ui](https://taro-ui.aotu.io/#/docs/countdown)
+* [vant](https://youzan.github.io/vant/#/zh-CN/count-down)
 
 [⬆ Back to Top](#table-of-contents)
 
@@ -67,10 +67,10 @@ api 设计和实现参考了
 
 For those who are interested in contributing to this project, such as:
 
-- report a bug
-- request new feature
-- fix a bug
-- implement a new feature
+* report a bug
+* request new feature
+* fix a bug
+* implement a new feature
 
 Please refer to our [contributing guide](https://github.com/FEMessage/.github/blob/master/CONTRIBUTING.md).
 
@@ -81,6 +81,7 @@ Please refer to our [contributing guide](https://github.com/FEMessage/.github/bl
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
 <table><tr><td align="center"><a href="https://donaldshen.github.io/portfolio"><img src="https://avatars3.githubusercontent.com/u/19591950?v=4" width="100px;" alt="Donald Shen"/><br /><sub><b>Donald Shen</b></sub></a><br /><a href="https://github.com/FEMessage/count-down/commits?author=donaldshen" title="Code">💻</a> <a href="https://github.com/FEMessage/count-down/commits?author=donaldshen" title="Documentation">📖</a> <a href="https://github.com/FEMessage/count-down/commits?author=donaldshen" title="Tests">⚠️</a></td></tr></table>
 
 <!-- prettier-ignore -->

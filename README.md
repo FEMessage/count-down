@@ -9,22 +9,22 @@
 
 A user friendly vue count-down component 😃
 
-![demo](https://cdn.nlark.com/yuque/0/2019/gif/304775/1564112303450-9cbd89cf-c170-4ffe-a905-5890b9948858.gif)
+![demo](https://i.loli.net/2019/11/15/khawbTnFuvHOd7N.gif)
 
 [中文文档](./README-zh.md)
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-  - [Use requestAnimationFrame](#use-requestanimationframe)
-  - [Millisecond](#millisecond)
-  - [Smart default format](#smart-default-format)
-- [Links](#links)
-- [Install](#install)
-- [Inspiration](#inspiration)
-- [Contributing](#contributing)
-- [Contributors](#contributors)
-- [License](#license)
+* [Introduction](#introduction)
+  * [Use requestAnimationFrame](#use-requestanimationframe)
+  * [Millisecond](#millisecond)
+  * [Smart default format](#smart-default-format)
+* [Links](#links)
+* [Install](#install)
+* [Inspiration](#inspiration)
+* [Contributing](#contributing)
+* [Contributors](#contributors)
+* [License](#license)
 
 ## Introduction
 
@@ -44,7 +44,7 @@ The default format will adjust by the props which are days, hours, minutes & sec
 
 ## Links
 
-- [docs](https://femessage.github.io/count-down/)
+* [docs](https://femessage.github.io/count-down/)
 
 [⬆ Back to Top](#table-of-contents)
 
@@ -60,8 +60,8 @@ yarn add @femessage/count-down
 
 The api & implementation designs are inspired by
 
-- [taro-ui](https://taro-ui.aotu.io/#/docs/countdown)
-- [vant](https://youzan.github.io/vant/#/zh-CN/count-down)
+* [taro-ui](https://taro-ui.aotu.io/#/docs/countdown)
+* [vant](https://youzan.github.io/vant/#/zh-CN/count-down)
 
 [⬆ Back to Top](#table-of-contents)
 
@@ -69,10 +69,10 @@ The api & implementation designs are inspired by
 
 For those who are interested in contributing to this project, such as:
 
-- report a bug
-- request new feature
-- fix a bug
-- implement a new feature
+* report a bug
+* request new feature
+* fix a bug
+* implement a new feature
 
 Please refer to our [contributing guide](https://github.com/FEMessage/.github/blob/master/CONTRIBUTING.md).
 
@@ -83,6 +83,7 @@ Please refer to our [contributing guide](https://github.com/FEMessage/.github/bl
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
 <!-- prettier-ignore -->
 <table>
   <tr>
