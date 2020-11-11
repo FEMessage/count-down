@@ -1,6 +1,6 @@
 {
   "name": "@femessage/count-down",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "a user friendly vue count-down component",
   "author": "https://github.com/FEMessage",
   "license": "MIT",
