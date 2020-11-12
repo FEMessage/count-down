@@ -66,6 +66,13 @@ export default {
     format: {
       type: String,
       default: ''
+    },
+
+    /**
+     * keep countdowm time in session
+     */
+    keepAlive: {
+      type: String
     }
   },
   data() {
@@ -99,10 +106,25 @@ export default {
     },
     countdownData() {
       return toTimeData(this.countdown)
+    },
+    keepAliveId() {
+      return this.keepAlive ? `count_down_${this.keepAlive}` : ''
     }
   },
   mounted() {
     if (this.autoplay) this.start()
+    window.addEventListener('unload', this.storeCountDownState)
+    let session = sessionStorage.getItem(this.keepAliveId)
+    if (session) {
+      session = JSON.parse(session)
+      const mountTime = session.rafId ? Date.now() - session.unloadTime : 0
+      this.elapsed = this.time - (session.countdown - mountTime)
+    }
+  },
+  beforeDestroy() {
+    cancelAnimationFrame(this.rafId)
+    this.storeCountDownState()
+    window.removeEventListener('unload', this.storeCountDownState)
   },
   methods: {
     /**
@@ -122,6 +144,7 @@ export default {
             /**
              * 计时结束事件
              */
+            this.clearCountDownState()
             this.$emit('finish')
           }
         })
@@ -143,6 +166,21 @@ export default {
     reset() {
       this.pause()
       this.elapsed = 0
+    },
+    storeCountDownState() {
+      if (this.keepAliveId) {
+        sessionStorage.setItem(
+          this.keepAliveId,
+          JSON.stringify({
+            countdown: this.countdown,
+            unloadTime: Date.now(),
+            rafId: this.rafId
+          })
+        )
+      }
+    },
+    clearCountDownState() {
+      sessionStorage.removeItem(this.keepAliveId)
     }
   }
 }
